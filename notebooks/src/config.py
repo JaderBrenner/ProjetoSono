@@ -10,5 +10,4 @@ DADOS_ORIGINAIS = PASTA_DADOS / "sono_e_estilo_de_vida.csv"
 DADOS_TRATADOS = PASTA_DADOS / "df_sono_tratado.parquet"
 
 # coloque abaixo outros caminhos que você julgar necessário
-PASTA_RELATORIOS = PASTA_PROJETO / "relatorios"
-PASTA_IMAGENS = PASTA_RELATORIOS / "imagens"
+PASTA_IMAGENS = PASTA_PROJETO / "imagens"
