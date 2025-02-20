@@ -1,7 +1,5 @@
 #### Insights sobre padrões de sono e hábitos diários
 
-![imagem](imagens/sono_pexels.jpg)
-
 O Sleep Health and Lifestyle Dataset fornece insights detalhados sobre os padrões de sono, hábitos diários e fatores de estilo de vida dos indivíduos. Este conjunto de dados sintéticos compreende 400 linhas e 13 colunas , cobrindo métricas essenciais como duração do sono, qualidade do sono, níveis de atividade física, estresse, categoria de IMC, saúde cardiovascular e presença de distúrbios do sono.
 
 ## Organização do projeto
