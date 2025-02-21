@@ -26,17 +26,17 @@ O Sleep Health and Lifestyle Dataset fornece insights detalhados sobre os padrõ
 
 ## Configuração do ambiente
 
-1. Faça o clone do repositório que será criado a partir deste modelo.
+1. Faça o clone do repositório.
 
     ```bash
-    git clone ENDERECO_DO_REPOSITORIO
+    git clone git@github.com:JaderBrenner/ProjetoSono.git
     ```
 
-2. Crie um ambiente virtual para o seu projeto utilizando o gerenciador de ambientes de sua preferência.
+2. Crie um ambiente virtual para o seu projeto utilizando o 'conda'.
 
-      ```bash
-      conda env export > ambiente.yml
-      ```
+   ```bash
+   conda env create -f ambiente.yml --name sono_insights
+   ```
 
 ## Um pouco mais sobre a base
 
