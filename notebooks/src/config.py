@@ -8,6 +8,7 @@ PASTA_DADOS = PASTA_PROJETO / "dados"
 # coloque abaixo o caminho para os arquivos de dados de seu projeto
 DADOS_ORIGINAIS = PASTA_DADOS / "sono_e_estilo_de_vida.csv"
 DADOS_TRATADOS = PASTA_DADOS / "df_sono_tratado.parquet"
+DADOS_TRATADOS_ML = PASTA_DADOS / "df_ml.parquet"
 
 # coloque abaixo outros caminhos que você julgar necessário
 PASTA_IMAGENS = PASTA_PROJETO / "imagens"
