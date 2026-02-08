@@ -5,67 +5,6 @@ from sklearn.pipeline import Pipeline
 
 RANDOM_STATE = 42
 
-
-def construir_pipeline_modelo_classificacao(classificador, preprocessor=None):
-    if preprocessor is not None:
-        pipeline = Pipeline([("preprocessor", preprocessor), ("clf", classificador)])
-    else:
-        pipeline = Pipeline([("clf", classificador)])
-
-    model = pipeline
-
-    return model
-
-
-def treinar_e_validar_modelo_classificacao(
-    X,
-    y,
-    cv,
-    classificador,
-    preprocessor=None,
-    multi_class=False,
-):
-
-    model = construir_pipeline_modelo_classificacao(
-        classificador,
-        preprocessor,
-    )
-
-    #scores = cross_validate(
-        #model,
-        #X,
-        #y,
-        #cv=cv,
-        #scoring=[
-            #"accuracy",
-            #"balanced_accuracy",
-            #"f1" if not multi_class else "f1_weighted",
-            #"precision" if not multi_class else "precision_weighted",
-            #"recall" if not multi_class else "recall_weighted",
-            #"roc_auc" if not multi_class else "roc_auc_ovr",
-            #"average_precision",
-        #],
-    #)#
-
-    scores = cross_validate(
-        model,
-        X,
-        y,
-        cv=cv,
-        scoring=[
-            "accuracy",
-            "balanced_accuracy",
-            "f1",
-            "precision",
-            "recall",
-            "roc_auc",
-            "average_precision",
-        ],
-    )
-    
-    return scores
-
-
 def grid_search_cv_classificador(
     classificador,
     param_grid,
